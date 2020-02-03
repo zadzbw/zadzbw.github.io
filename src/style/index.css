@@ -1,0 +1,19 @@
+*:focus {
+  outline: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI",
+  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant: tabular-nums;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+  user-select: none;
+}
+
+::selection {
+  background-color: #1099ff;
+}

@@ -1,0 +1,12 @@
+#
+.git
+.DS_Store
+.awcache
+node_modules
+
+# editor configs
+.idea
+.vscode
+
+# log files
+*.log
