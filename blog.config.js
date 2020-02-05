@@ -10,4 +10,4 @@ module.exports = {
     assetsSubDirectory: 'static',
     publicPath: '/',
   },
-};
+}

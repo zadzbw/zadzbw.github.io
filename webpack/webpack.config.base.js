@@ -21,9 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        use: [
-          'babel-loader',
-        ],
+        use: ['babel-loader'],
         include: [APP_PATH],
         exclude: [MODULES_PATH],
       },
@@ -139,5 +137,4 @@ module.exports = {
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
-
 }

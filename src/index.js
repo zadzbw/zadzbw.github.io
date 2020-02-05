@@ -5,10 +5,7 @@ import './style/index.css'
 import App from './App'
 
 const render = (AppContainer) => {
-  ReactDOM.render(
-    <AppContainer/>,
-    document.getElementById('root'),
-  )
+  ReactDOM.render(<AppContainer/>, document.getElementById('root'))
 }
 
 render(App)
