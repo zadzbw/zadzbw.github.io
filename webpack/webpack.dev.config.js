@@ -3,7 +3,7 @@ const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const { MODULES_PATH } = require('./paths')
-const baseConfig = require('./webpack.config.base')
+const baseConfig = require('./webpack.base.config')
 const blogConfig = require('../blog.config')
 
 module.exports = () => {
