@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
+const StylelintPlugin = require('stylelint-webpack-plugin')
 const { MODULES_PATH } = require('./paths')
 const baseConfig = require('./webpack.base.config')
 const blogConfig = require('../blog.config')
@@ -60,6 +61,10 @@ module.exports = () => {
             `Open browser to http://127.0.0.1:${blogConfig.dev.port}${blogConfig.dev.publicPath}`,
           ],
         },
+      }),
+      new StylelintPlugin({
+        files: ['src/**/*.css', 'src/**/*.scss'],
+        emitErrors: false,
       }),
     ],
   }
